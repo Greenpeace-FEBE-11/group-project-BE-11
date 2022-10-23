@@ -13,7 +13,7 @@
 
 
 @media only screen and (max-width: 900px) {
-    /* For mobile phones: */
+
 
 
 
@@ -37,15 +37,12 @@
 
         margin-left: 20px;
         padding: 0px;
-        /* padding-left: 70px; */
+       
         z-index: 1;
     
     }
   
    
-
-    
-
 
 }
 
@@ -69,7 +66,7 @@
 .logofix{
     
     margin-right: 0;
-    /* border: ridge; */
+  
 }
 
 .navbrand{
@@ -87,10 +84,7 @@
     color: white;
 }
 
-/* .logonav{
-    position:absolute;
-    z-index: 1;
-} */
+
 
 .pohonkita{
    margin: 0px;
@@ -99,10 +93,6 @@
     font-size: 20px;
     font-weight: 1000;
     color: white;
-    /* display: flex;
-    align-items: flex-start; */
-     /*border per sub */ 
-     /* border: ridge; */
     left: 0;
     margin-left: 100px;
     padding-top: 20px;
@@ -113,68 +103,39 @@
 }
 
 .navmenu1{
-    /* transform: scale(20.20); */
-   /* border semua menu */
-   /* border: ridge;  */
-    /* left: 100px; */
     margin-top: 10px;
-    /* margin-left: -23px;  ini biar mepet saat responsiv */
-    /* margin-left: -23px; */
-    /* border: ridge; */
     padding-right: 0vmin;
    
 }
 
 
 .dropdown{
-   
-    /* border: ridge; */
     align-items: center;
-    /* justify-content: center;
-    justify-items: center;
-    text-align: center;
-    align-content: center; */
-    /* display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: safe; */
     padding-top: 0px;
 
 }
 
 .akun{
-/* padding-left: 100px; */
     display: flex;
     justify-content: center;
-    /* border: ridge; */
+
 }
 .akun a{
     /* margin-left: 100px; */
     font-size: 20px;
     font-weight: 1000;
     color: white;    
-    /* border: ridge; */
+   
 }
 
 
 
-/* section{
-    align-content: space-around;
-    color: aqua;
-    border: dotted;
-    margin-left: 180px;
-} */
-
-/* .nav-item{
-    margin-left: 100px;
-} */
 
 .navdd{
     background-color: #FDE3B3;
-    /* border: ridge; */
     border-color: black;
     width: auto;
-    /* padding-right: 50px; */
+ 
     
 }
 
@@ -213,11 +174,7 @@
     
 }
 
-/* .header {
-    display: block;
-    justify-content: space-between;
-    align-items: center;
-} */
+
 
 .home-page, .txt-category, .detail-category {
  
@@ -243,65 +200,6 @@
     line-height: 150%;
 }
 
-/* #judul #head-pic img{
-    position: relative;
-    margin-left: 200px;
-    z-index: 2;
-}
-#judul #head-pic svg{
-    width: 650px;
-    position: absolute;
-    z-index: 1;
-    margin: -130px 0px 0 100px;
-    
-} */
-
-
-
-
-
-/* .home-page {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-
-}
-
-#judul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 100px;
-    
-}
-
-.judul .head-pic h1{
-    width: 400px;
-    margin-right: 250px;
-    font-size: 45px;
-} 
-
- .judul .head-pic img{
-    position: relative;
-    margin-left: 200px;
-    z-index: 2;
-}
-.judul .head-pic svg{
-    width: 650px;
-    position: absolute;
-    z-index: 1;
-    margin: -130px 0px 0 100px;
-    
-} */
-
-
-
-/* .img-bott {
-    margin-top: -115px;
-    margin-bottom: 0;
-} */
-
-
 
 
 
@@ -309,13 +207,17 @@
 /* category */
 
 .txt-category{
+    display: inline;
     margin-top: -80px;
     text-align: center;
 }
 
 .txt-category h3{
-    width: 500px;
-    margin: 0 0 20px 300px;
+    display: flex;
+    width: 400px;
+    margin-left: 400px;
+    text-justify: auto;
+    text-align: center;
 }
 
 .txt-category #txt-item{
@@ -323,4 +225,66 @@
     margin-top: 120px;
 }
 
+
+/* detail*/
+
+
+.detail-category {
+    margin-top: 130px;
+    background-color: #018072;
+    border-top-left-radius: 90px ;
+    border-top-right-radius: 90px;
+    color: white;
+    height: 120vh;
+
+}
+
+.detail-category .judul-detail {
+    display: inline;
+    text-align: center;
+    padding-top: 140px;
+    
+}
+.detail-category .judul-detail h1{
+    display: flex;
+    padding-top: 90px;
+    width: 50rem;
+    margin-left: 200px;
+    text-justify: auto;
+    text-align: center;
+    /* width: 50%;
+    margin-left: 300px; */
+    
+   
+   
+}
+
+#detail {
+    margin-top: 90px;
+}
+
+.detail-item img{
+    box-sizing: 90px;
+}
+
+@media only screen and (max-width: 900px) {
+    .detail-category .judul-detail h1{
+        display: flex;
+        padding-top: 70px;
+        width: 70%;
+        margin: 0;
+        text-align: center;
+    }
+    
+    
+    .txt-category h3{
+        display: flex;
+        padding-bottom: 30px;
+        width: 70%;
+        margin-left: 50px;
+        text-align: center;
+        
+    }
+
+}
 
