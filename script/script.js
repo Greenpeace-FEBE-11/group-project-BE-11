@@ -4,6 +4,7 @@ const category = document.getElementById('txt-item')
 const detailHutan = document.getElementById('detail')
 const detailPangan = document.getElementById('detail-pangan')
 const detailPerairan = document.getElementById('detail-perairan')
+const detailKesehatan = document.getElementById('detail-kesehatan')
 
 async function getMockApi(url) {
 
@@ -48,7 +49,7 @@ getMockApi(`${url}/informasi`)
                 </div>
                 <div class="col-sm-6 ">
                     <div class="detail-item">
-                        <img src="${informasi.img}" width="700px" alt="">
+                        <img src="${informasi.img}" width="600px" alt="">
                     </div>
                 </div>
                 <style> .detail-item img{    
@@ -57,7 +58,7 @@ getMockApi(`${url}/informasi`)
                 }
                 @media only screen and (max-width: 900px) {
                     .detail-item img{
-                        width: 70vh;
+                        width: 100%;
                     }
                     
                 }
@@ -76,7 +77,7 @@ getMockApi(`${url}/informasi`)
       
             <div class="col-sm-6 ">
                 <div class ="detail-item-pangan">
-                    <img src="${informasi.img}"  width="600px" height="450px" alt="">
+                    <img src="${informasi.img}"  width="550px" height="450px" alt="">
                 </div>
             </div>
             <div class="col-sm-6 ">
@@ -121,7 +122,7 @@ getMockApi(`${url}/informasi`)
                 </div>
                 <div class="col-sm-6 ">
                     <div class="detail-item-perairan">
-                        <img src="${informasi.img}" width="700px" alt="">
+                        <img src="${informasi.img}" width="600px" alt="">
                     </div>
                 </div>
 
@@ -147,6 +148,47 @@ getMockApi(`${url}/informasi`)
     })
 }) 
 
+
+getMockApi(`${url}/informasi`)
+.then(function (result) {
+    detailKesehatan.innerHTML ='';
+    result.slice(7, 8).forEach(function (informasi) {
+        detailKesehatan.innerHTML += `
+        <div class="col-sm-6 ">
+            <div class ="detail-item-kesehatan">
+                <img src="${informasi.img}" width="550px" alt="">
+            </div>
+        </div>
+        <div class="col-sm-6 ">
+            <div class="detail-item-kesehatan">
+                <h3>${informasi.title}</h3>
+                <p>${informasi.content}</p>
+            </div>
+        </div>
+
+
+        <style> .detail-item-kesehatan img{    
+            border-radius: 50px;
+
+            
+            
+        }
+
+        @media only screen and (max-width: 900px) {
+            .detail-item-kesehatan img{
+                width: 100%;
+
+            }
+            
+            
+        }
+    
+        </style>
+
+        `
+        
+    })
+}) 
 
 
 
