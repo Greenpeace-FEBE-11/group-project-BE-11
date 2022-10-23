@@ -2,7 +2,7 @@ const url = 'https://6352c8eaa9f3f34c3748e117.mockapi.io';
 
 const category = document.getElementById('txt-item')
 const detailHutan = document.getElementById('detail')
-const detailPerairan = document.getElementById('detail-perairan')
+const detailPangan = document.getElementById('detail-pangan')
 
 async function getMockApi(url) {
 
@@ -63,5 +63,35 @@ getMockApi(`${url}/informasi`)
         
     })
 }) 
+
+getMockApi(`${url}/informasi`)
+.then(function (result) {
+    detailPangan.innerHTML ='';
+    result.slice(5, 6).forEach(function (informasi) {
+        detailPangan.innerHTML += `
+        <div class="container">
+        <div class="row" id="detail-pangan">
+            <div class="col-sm-6 ">
+                <div class ="detail-item">
+                    <img src="${informasi.img}"  width="600px" height="450px" alt="">
+                </div>
+            </div>
+            <div class="col-sm-6 ">
+                <div class="detail-item"> 
+                    <h3>${informasi.title}</h3>
+                    <p>${informasi.content}</p>
+                </div>
+            </div>
+            
+
+        </div>
+        </div>
+
+        `
+        
+    })
+}) 
+
+
 
 

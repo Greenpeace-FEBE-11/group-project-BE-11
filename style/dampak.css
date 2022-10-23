@@ -176,7 +176,7 @@
 
 
 
-.home-page, .txt-category, .detail-category {
+.home-page, .txt-category, .detail-category, .detail-category-pangan {
  
     width: 100%;
     height: 100vh;
@@ -288,3 +288,15 @@
 
 }
 
+.detail-category-pangan {
+    position: absolute;
+    background-color: #08B88A;
+    border-top-left-radius: 90px ;
+    border-top-right-radius: 90px;
+    margin-top: -90px;
+}
+
+#detail-pangan{
+    margin-top: 40px;
+    text-align: justify;
+}
