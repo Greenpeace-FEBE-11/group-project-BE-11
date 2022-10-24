@@ -23,7 +23,7 @@ async function getData(APIURL){
                   userLogin.password == data.password;
 
                   if (signin){
-                    window.location.href="dampak.html"
+                    window.location.href="landing.html"
                   } else {
                     
                     alert("Email dan Password anda salah")
