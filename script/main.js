@@ -206,7 +206,7 @@ if (cekem=="yes" && cekpass=="yes") {
             document.getElementById('email').value = '';
             document.getElementById('password').value = '';
     
-            window.location = 'login.html';
+            window.location = 'index.html';
           })
       }
     });
