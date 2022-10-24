@@ -24,6 +24,7 @@ async function getData(APIURL){
 
                   if (signin){
                     window.location.href="landing.html"
+                    localStorage.setItem('user_id',signin.id)
                   } else {
                     
                     alert("Email dan Password anda salah")
