@@ -27,7 +27,7 @@ async function getData(APIURL){
                     localStorage.setItem('user_id',signin.id)
                   } else {
                     
-                    alert("Email dan Password anda salah")
+                   
                   }
     }))
   }
