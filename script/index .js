@@ -23,7 +23,7 @@ async function getData(APIURL){
                   userLogin.password == data.password;
 
                   if (signin){
-                    window.location.href="home.html"
+                    window.location.href="dampak.html"
                   } else {
                     
                     alert("Email dan Password anda salah")
@@ -32,56 +32,3 @@ async function getData(APIURL){
   }
 }
 
-
-// const url = 'https://6350c1a178563c1d82c78809.mockapi.io/user';
-
-// async function getMockApi(url) {
-//   const response = await fetch(url);
-
-//   const result = response.json();
-
-//   return result;
-// }
-
-// async function postMockApi(url, payload) {
-//   const response = await fetch(url, {
-//     method: 'POST',
-//     headers: {
-//       'Content-Type': 'application/x-www-form-urlencoded'
-//     },
-//     body: new URLSearchParams(payload)
-//   });
-
-//   const result = response.json();
-
-//   return result;
-// }
-
-// document.getElementById('signin').addEventListener('submit', function(e) {
-//   e.preventDefault();
-
-//   const email = document.getElementById('email').value;
-//   const password = document.getElementById('password').value;
-
-
-//   if (email && password) {
-//     getMockApi(`${url}/user`).then(function(users) {
-//       const loggingUser = users.find(function(user) {
-//         return user.email === email;
-//       });
-
-//       if (loggingUser) {
-//         console.log('melakukan proses login.....');
-//         if (loggingUser.password === password) {
-//           console.log('login berhasil....');
-//           localStorage.setItem('user_id', loggingUser.id);
-//           window.location.href= 'home.html';
-//         } else {
-//           console.log('password salah!!!');
-//         }
-//       } else {
-//         console.log('user tidak ditemukan.....');
-//       }
-//     });
-//   }
-// });
