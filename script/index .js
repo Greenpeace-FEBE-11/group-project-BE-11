@@ -1,4 +1,4 @@
-const APIURL = "https://6350c1a178563c1d82c78809.mockapi.io/user";
+const APIURL = "https://635365eee822bad5278bfe37.mockapi.io";
 let loginForm= document.querySelector("#login")
 let inputemail = document.querySelector('#email')
 let inputPassword = document.querySelector('#password')
