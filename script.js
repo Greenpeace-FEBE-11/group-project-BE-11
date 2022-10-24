@@ -64,3 +64,14 @@ function getData1(url){
 
     })
 }
+
+
+let logout = document.getElementsByClassName('logout')
+
+logout.addEventListener('click', function(e) {
+    e.preventDefault();
+  
+    localStorage.removeItem('user_id');
+  
+    window.location = 'index.html';
+  });
